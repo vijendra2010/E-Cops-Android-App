@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Activities.CitizenSettingsActivity">
+
+    <RelativeLayout
+        android:background="@color/background"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rel_one"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+            <android.support.design.circularreveal.cardview.CircularRevealCardView
+                app:cardCornerRadius="50dp"
+                app:cardElevation="10dp"
+                android:layout_centerInParent="true"
+                android:layout_width="96dp"
+                android:layout_height="96dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/logonew"
+                    app:civ_border_color="@color/colorPrimaryDark"
+                    app:civ_border_width="2dp"
+                    app:civ_circle_background_color="@color/gray" />
+
+            </android.support.design.circularreveal.cardview.CircularRevealCardView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/rel_one"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:background="@color/background"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:id="@+id/profile_name"
+                            android:textSize="20dp"
+                            android:text="Name"
+                            android:textColor="@color/hint"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/edit_design"
+                            android:padding="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/profile_number"
+                            android:layout_below="@+id/profile_name"
+                            android:textSize="20dp"
+                            android:text="Number"
+                            android:textColor="@color/hint"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/edit_design"
+                            android:padding="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/profile_password"
+                            android:text="Password"
+                            android:textColor="@color/hint"
+                            android:layout_below="@+id/profile_number"
+                            android:textSize="20dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/edit_design"
+                            android:padding="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <Button
+                            android:id="@+id/c_change_pass_btn"
+                            android:layout_margin="20dp"
+                            android:padding="10dp"
+                            android:textColor="@color/white"
+                            android:text="Change Password"
+                            android:background="@drawable/edit_button"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+
+                    </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
